@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Problem 2</title>
+  </head>
+  <body>
+    <p id="count">Count: 0</p>
+
+    <button id="btn">Click to Increment</button>
+
+    <script>
+      const increment = document.getElementById("btn");
+      const countParagraph = document.getElementById("count");
+
+      let count = 0;
+
+      increment.addEventListener("click", () => {
+        count++;
+
+        countParagraph.innerHTML = `Count: ${count}`;
+      });
+    </script>
+  </body>
+</html>

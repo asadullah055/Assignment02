@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image Switcher</title>
+  </head>
+  <body>
+    <img id="img" src="./img/image1.jpg" alt="Image 1" />
+    <button id="btn1">Image 1</button>
+    <button id="btn2">Image 2</button>
+
+    <script>
+      const img = document.getElementById("img");
+      const btn1 = document.getElementById("btn1");
+      const btn2 = document.getElementById("btn2");
+
+      btn1.addEventListener("click", () => {
+        img.src = "./img/image1.jpg";
+        img.alt = "Image 1";
+      });
+
+      btn2.addEventListener("click", () => {
+        img.src = "./img/image2.jpg";
+        img.alt = "Image 2";
+      });
+    </script>
+  </body>
+</html>

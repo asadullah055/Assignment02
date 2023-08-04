@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Problem 1</title>
+  </head>
+  <body>
+    <button id="myButton">Click Me!</button>
+
+    <div id="contentDiv">Content will change here.</div>
+
+    <script>
+      const button = document.getElementById("myButton");
+      const contentDiv = document.getElementById("contentDiv");
+      button.addEventListener("click", () => {
+        contentDiv.innerHTML = "New message or image here!";
+      });
+    </script>
+  </body>
+</html>
